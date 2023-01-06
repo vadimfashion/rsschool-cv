@@ -1,1 +1,1 @@
-# rsschool-cv
+https://vadimfashion.github.io/rsschool-cv/cv

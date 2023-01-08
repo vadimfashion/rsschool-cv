@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@700&display=swap');
+
 
 html {
     box-sizing: border-box;
@@ -7,12 +8,15 @@ html {
     margin: 0 auto;
     background: #EDF2EC;   
     }
+    *, *::before *::after {
+        box-sizing: inherit;
+    }
 
 /*header*/
 
 .contener {
     background: #EDF2EC;
-    width: 1222px;
+    width: 1220px;
     margin: 0 auto;
 }
 
@@ -43,6 +47,9 @@ html {
     color: #010201;
     text-decoration: none;
 }
+.link__name:hover {
+    color:#E06733;
+}
 
 /*main*/ 
 
@@ -68,18 +75,18 @@ span {
     height: 340px;
 }
 .plants h1 {
-    font-family: Inter;
+    font-family: 'inter';
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 50px;
     width: 549px;
     height: 101px;
     color: #717171;;
 }
 .plants p {
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: 35px;
     width: 525px;
     height: 105px;
@@ -116,18 +123,19 @@ span {
 .pro h2 {
     color: #E06733;
     max-width: 463px;
-    font-family: Inika;
+    font-family: 'Inika';
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: 52px;
     text-align: left;
 }
 .pro p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
+    font-weight: 400px;
     font-size: 20px;
     line-height: 30px;
     color: #636060;
-    font-weight: 400px;
+    
 }
 .house img{
     width: 464px;
@@ -172,23 +180,24 @@ span {
     height: 50px;
     color: #E06733;
     margin-left: 38px;
-    font-family: Inika;
+    font-family: 'Inika';
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: 26px;
 }
 .service__button:last-child {
     margin-right: 0;
 }
 .service__img {
-    width: 1222px;
+    width: 1220px;
     height: 955px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2,auto);
     grid-gap: 45px;
     margin-top: 90px;
+    justify-content:space-between;
+    margin-left: 109px;
  }
 .img__serv {
     width: 330px;
@@ -199,7 +208,7 @@ span {
 .img__serv h4 {
     font-family: Inter;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 20px;
     text-align: center;
     color: #E06733;
@@ -208,7 +217,7 @@ span {
 .img__serv p {
     font-family: Inter;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: 20px;
     text-align: center;
     color: #717171;
@@ -218,17 +227,18 @@ span {
     width: 1440px;
     height: 560px;
     background: white;
+    margin-top: 119px;
 }
 .prices__all {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 2fr;
 }
 .prices__left h2 {
     width: 135px;
     height: 49px;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 48px;
     text-align: left;
     color: black;
@@ -249,9 +259,9 @@ span {
     width: 250px;
     height: 50px;
     background: #EDF2EC;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 20px;
     border-radius: 20px;
     padding-left: 40px;
@@ -261,9 +271,8 @@ span {
     height: 103px;
     font-family: Inter;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 50px;
-    letter-spacing: 0em;
     text-align: right;
     color: #000000;
     margin-left: 380px;
@@ -278,8 +287,7 @@ span {
     margin-top: 38px;
     font-family: Inika;
     font-size: 20px;
-    font-weight: 700;
-    line-height: 26px;
+    font-weight: 700px;
     color: #E06733;
 }
 .prices__right img {
@@ -309,10 +317,9 @@ span {
     display: flex;
     width: 195px;
     height: 51px;
-    font-family: Inika;
+    font-family: 'Inika';
     font-size: 40px;
-    font-weight: 700;
-    line-height: 52px;
+    font-weight: 700px;
     text-align: left;
     padding-top: 60px;
 }
@@ -325,8 +332,7 @@ span {
     border-radius: 0px;
     font-family: Inter;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 40px;
+    font-weight: 400px;
     text-align: left;
     padding-left: 20px;
 }
@@ -345,7 +351,7 @@ span {
     align-items: center;
     width: 1440px;
     height: 130px;
-    font-family: Inter;
+    font-family: "inter";
 }
 .footer__date {
     display: flex;
